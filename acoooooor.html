@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="accordionWrapper">
+     
+                      <div class="accordionItemHeading1">About accordions</div>
+                      <div class="accordionItemContent1">
+                          <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+                          <p>This simple accordion degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+                      </div>
+             
+                
+                    <div class="accordionItem close">
+                      <h2 class="accordionItemHeading2">Accordion items</h2>
+                      <button class="accordionItemContent2">
+                        <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+                        <p>This simple accordion degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+                      </button>
+                    </div>
+                
+                    <div class="accordionItem close">
+                      <h2 class="accordionItemHeading3">How to use a JavaScript accordion</h2>
+                      <button class="accordionItemContent3">
+                        <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+                        <p>This simple accordion degrades gracefully in browsers that don't support JavaScript or CSS.</p>
+                      </button>
+                    </div>
+                </div>
+                <script src="jquery.js"></script>
+                <script>
+               $(document).ready(function(){
+  $(".accordionItemHeading1").click(function(){
+    $(".accordionItemContent1").slideDown();
+    $(".accordionItemContent2").slideUp();
+    $(".accordionItemContent3").slideUp();
+  });
+  $(".accordionItemHeading2").click(function(){
+    $(".accordionItemContent2").slideDown();
+    $(".accordionItemContent1").slideUp();
+    $(".accordionItemContent3").slideUp();
+  });
+  $(".accordionItemHeading3").click(function(){
+    $(".accordionItemContent3").slideDown();
+    $(".accordionItemContent1").slideUp();
+    $(".accordionItemContent2").slideUp();
+  
+  });
+});
+                 </script>
+             </body>
+             </html>
+   
